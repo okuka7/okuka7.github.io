@@ -7,7 +7,7 @@ https://gist.github.com/tuananh/743255://gist.github.com/tuananh/7432553 -->
 
 	<h2>Archive</h2>
 	<ul>
-	  {% for wiki in site.wiki %}
+	  {% for post in site.posts %}
 	    {% unless post.next %}
 	      <h3>{{ wiki.date | date: '%Y-%m' }}</h3>
 	    {% else %}
@@ -18,6 +18,6 @@ https://gist.github.com/tuananh/743255://gist.github.com/tuananh/7432553 -->
 	      {% endif %}
 	    {% endunless %}
 
-	    <li><a href="{{site.url}}{{ wiki.url }}">{{ wiki.title }}</a></li>
+	    <li><a href="{{site.url}}{{ post..rl }}">{{ wiki.title }}</a></li>
 	  {% endfor %}
 	</ul>
