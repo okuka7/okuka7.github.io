@@ -7,7 +7,7 @@ https://gist.github.com/tuananh/743255://gist.github.com/tuananh/7432553 -->
 
 	<h2>Archive</h2>
 	<ul>
-	  {% for wiki in site.wikis %}
+	  {% for wiki in site.wiki %}
 	    {% unless post.next %}
 	      <h3>{{ wiki.date | date: '%Y-%m' }}</h3>
 	    {% else %}
