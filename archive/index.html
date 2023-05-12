@@ -9,12 +9,12 @@ https://gist.github.com/tuananh/743255://gist.github.com/tuananh/7432553 -->
 	<ul>
 	  {% for post in site.posts %}
 	    {% unless post.next %}
-	      <h3>{{ wiki.date | date: '%Y-%m' }}</h3>
+	      <h3>{{ post.date | date: '%Y-%m' }}</h3>
 	    {% else %}
 	      {% capture year %}{{ wiki.date | date: '%Y-%m' }}{% endcapture %}
 	      {% capture nyear %}{{ wiki.next.date | date: '%Y-%m' }}{% endcapture %}
 	      {% if year != nyear %}
-	        <h3>{{ wiki.date | date: '%Y-%m' }}</h3>
+	        <h3>{{ post.date | date: '%Y-%m' }}</h3>
 	      {% endif %}
 	    {% endunless %}
 
