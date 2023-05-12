@@ -1,0 +1,20 @@
+---
+layout: default
+title: Wiki
+---
+
+	<h2>Wiki</h2>
+	<ul>
+		{% for post in site.wiki %}
+			{% unless wiki.next %}
+				<h3>{{ wiki.date | date: '%Y-%m' }}</h3>
+			{% else %}
+				{% capture year %}{{ wiki.date | date:'%Y-%m'}}{% endcapture %}
+			{% if year != nyear %}
+			<h3>{{ wiki.date | date: '%Y-%m' }}</h3>
+			{% endif %}
+		{% endunless %}
+
+		<li><a href="{{site.url}}{{ wiki.url }}">{{ wiki.title }}</a></li>
+	{% endfor %}
+	</ul>
