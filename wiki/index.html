@@ -5,7 +5,7 @@ title: Wiki
 
 	<h2>Wiki</h2>
 	<ul>
-		{% for post in site.wiki %}
+		{% for wiki in site.wiki %}
 			{% unless wiki.next %}
 				<h3>{{ wiki.date | date: '%Y-%m' }}</h3>
 			{% else %}
