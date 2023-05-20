@@ -1,7 +1,7 @@
-name: "Jekyll true minimal theme"
-description: "Lightweight theme"
+name: "MyRecord"
+description: "spinstones"
 
-url: '' 
+url: 'https://okuka7.github.io/' 
 baseurl: ''
 
 markdown: kramdown
