@@ -1,8 +1,8 @@
 name: "Planet"
 description: "grow"
 
-url: 'okuka7.github.io' 
-baseurl: 'okuka7.github.io'
+url: '' 
+baseurl: ''
 
 markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
